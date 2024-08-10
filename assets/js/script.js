@@ -130,21 +130,21 @@ switch(profession) {
    
     case 'fiscal':
         console.log('Sua camisa sera VERDE');
-        break;
+    break;
     case 'bombeiro':
         console.log('Sua camisa sera VERMELHA');
-        break;
+    break;
     case 'policial':
         console.log('Sua camisa sera AZUL');
-        break;
+    break;
     default:
         console.log('Sua camisa sera a PRETA');
-        break;
+    break;
 
 }
 
 // O switch é "caso" precise de umas das opções, se cooresponder 
-//a nemuma opcão entao vai para o "default".
+//a nenhuma opcão entao vai para o "default".
 
 -----*/
 /*
@@ -595,7 +595,7 @@ console.log(`P1  = ${p1.name} tem ${p1.age} anos`);
 console.log(`P2  = ${p2.name} tem ${p2.age} anos`);
 console.log(`P3  = ${p3.name} tem ${p3.age} anos`);
 
-*/
+//----------------------
 
 class Person {
 
@@ -638,4 +638,26 @@ let p3 = new Person("Pedro");
 
 p1.setAge(44);
 
-console.log(`${p1.name} tem ${p1.age} anos`)
+console.log(`${p1.name} tem ${p1.age} anos`);
+
+*/
+
+let carros = [
+    { marca: 'Mercedes', ano: 2023 },
+    { marca: 'BMW', ano: 2010},
+    { marca: 'Fiat', ano: 2025},
+];
+
+carros.sort((a, b) => {
+
+    if(a.ano > b.ano){
+        return 1;
+    } else if(a.ano < b.ano){
+        return -1;
+    } else {
+        return 0;
+    }
+
+});
+
+console.log(carros);

@@ -269,13 +269,13 @@ let cores = [
 
 for(let i = 0; i < cores.length; i++){
 
-     console.log(cores[i]);
+    console.log(cores[i]);
 
 }
 
-//São iguais o dde cima faz a quantidade de vezes definida
+//São iguais o de cima faz a quantidade de vezes definida
 //ja esse de baixo faz a quantidade de vezes que tem na variavel 
-// pois de passa do limite da erro de undefined
+// pois passa do limite da erro de undefined
 
 for(let i in cores){
 
@@ -365,8 +365,8 @@ let user = {
 // O of faz a variavel pegar o Valor
 // A cor de cores
 
-for(let a of frutas){
-    console.log(a);
+for(let i of frutas){
+    console.log(i);
 }
 
 // Já o IN deixa pegar por valor e por posição
@@ -377,6 +377,12 @@ for (let key in user) {
 }
 
 */
+
+
+
+
+
+
 
 /*
 
@@ -393,11 +399,16 @@ for (let key in user) {
 // so funciona para texto
 
 // appendchild ele faz a adicao de um novo 
-//elemento no final do contedudo,, 
+//elemento no final do contedudo, 
 //nao suistitui apenas adiciona
 
 // preppend faz a mesma coisa do appendchid 
 // porém no comeco do elemento
+
+
+
+
+
 
 function clicou(){
 
@@ -499,7 +510,7 @@ function clicou(){
     button.classList.toggle('azul');
     //Se não tiver ele adiciona, se tiver ele remove
     // O 'toggle' serve para fazer a verificação se não houver
-    // a calsse ele cria se houver ele remve
+    // a calsse ele cria se houver ele remver 
 
     // existe o '.replace' pesquisar sobre
     // serve para trocar de classes resume o add e remove em um
@@ -642,22 +653,61 @@ console.log(`${p1.name} tem ${p1.age} anos`);
 
 */
 
-let carros = [
-    { marca: 'Mercedes', ano: 2023 },
-    { marca: 'BMW', ano: 2010},
-    { marca: 'Fiat', ano: 2025},
-];
 
-carros.sort((a, b) => {
 
-    if(a.ano > b.ano){
-        return 1;
-    } else if(a.ano < b.ano){
-        return -1;
-    } else {
-        return 0;
+/*
+
+let botao = document.querySelector('.botao');
+botao.addEventListener('click', clicou);
+
+function clicou(){
+    
+    const sessao = document.querySelector('#sessao');
+    const posicaoAddUl = sessao.querySelector('.tittle');
+
+    let newUl = document.createElement('ul');
+    let newLi = document.createElement('li');
+    newLi.innerHTML = 'Item';
+
+    newUl.append(newLi);
+
+    posicaoAddUl.after(newUl);
+    
+
+}
+
+
+//esse de baixo funciona !
+
+let botao = document.querySelector('.botao');
+botao.addEventListener('click', clicou);
+
+
+function clicou(){
+    
+    //const posicaoAdd = document.querySelector('#sessao');
+    const ul = document.querySelector('#teste1');
+
+    let newLi = document.createElement('li');
+    newLi.innerHTML = 'Item';
+
+    ul.append(newLi);
+    
+}
+*/
+
+
+
+function clicou(){
+
+    const input = document.querySelector('input');
+    const botao = document.querySelector('.botao');
+
+    if(input.getAttribute('type') === 'text'){
+        input.setAttribute('type', 'password');
+        botao.innerText = "Mostrar Senha";
+    }else{
+        input.setAttribute('type', 'text');
+        botao.innerText = "Ocultar Senha";
     }
-
-});
-
-console.log(carros);
+}

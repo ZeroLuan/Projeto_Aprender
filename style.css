@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .main p{
-    width: 800px;
+    max-width: 500px;
     color: aliceblue;
 }
 
@@ -76,4 +76,8 @@ h1, h2, h3, h4, h5, h6{
     background-color: cadetblue;
     display: flex;
     justify-content: center;
+}
+
+.teste3{
+    margin: 5px 0px 5px 0px;
 }

@@ -1,3 +1,2 @@
-# Um simpeles projeto de testes para aprender a linguagem JavaScript aos poucos
+# Um simpeles projeto de testes com o objetivo de aprender a linguagem JavaScript aos poucos.
 
-## Nada de muito importatnte aqui ! 

@@ -694,9 +694,22 @@ function clicou(){
     ul.append(newLi);
     
 }
-*/
 
+let botao = document.querySelector('.botao');
+botao.addEventListener('click', clicou);
 
+function clicou(){
+    
+    const input = document.querySelector('input');
+
+    const ul = document.querySelector('#teste1');
+
+    let newLi = document.createElement('li');
+    newLi.innerHTML = 'Item';
+
+    ul.append(newLi);
+    
+}
 
 function clicou(){
 
@@ -710,4 +723,21 @@ function clicou(){
         input.setAttribute('type', 'text');
         botao.innerText = "Ocultar Senha";
     }
+}
+
+
+*/
+
+
+function clicou(){
+    
+    const button = document.querySelector('button');
+
+    console.log(button.classList);
+
+    button.classList.remove('azul');
+
+    console.log(button.classList);
+    
+  
 }
